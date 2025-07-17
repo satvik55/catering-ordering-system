@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | The Golden Spoon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="logo">My Profile</h1>
+        <nav>
+            <button onclick="window.location.href='/index.html'" class="nav-btn">Back to Menu</button>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        <div class="profile-card">
+            <h2>Account Details</h2>
+            <p><strong>Email:</strong> <span id="user-email">Loading...</span></p>
+            <button id="profile-logout-btn" class="nav-btn secondary">Logout</button>
+        </div>
+    </main>
+    <script type="module" src="js/profile.js"></script>
+</body>
+</html>

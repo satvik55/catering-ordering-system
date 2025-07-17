@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="logo">Admin Dashboard</h1>
+        <nav>
+            <a href="view-orders.html" class="nav-btn">View All Orders</a>
+            <button id="admin-logout-btn" class="nav-btn secondary">Logout</button>
+        </nav>
+    </header>
+
+    <main class="content-container">
+        <div class="form-wrapper admin-form">
+            <h2>Upload New Product</h2>
+            <form id="upload-product-form">
+                <div class="input-group">
+                    <input type="text" id="product-name" required>
+                    <label for="product-name">Product Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="product-desc" required>
+                    <label for="product-desc">Description</label>
+                </div>
+                 <div class="input-group">
+                    <input type="number" id="product-price" required>
+                    <label for="product-price">Price</label>
+                </div>
+                <button type="submit" class="primary-btn">Upload Product</button>
+            </form>
+        </div>
+    </main>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

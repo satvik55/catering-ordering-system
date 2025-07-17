@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | The Golden Spoon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+    <h1 class="logo">The Golden Spoon</h1>
+    <nav>
+    <button onclick="window.location.href='/my-orders.html'" class="nav-btn">My Orders</button>
+    <button onclick="window.location.href='/profile.html'" class="nav-btn">My Profile</button>
+    <button id="cart-btn" class="nav-btn">View Cart</button>
+    <button id="logout-btn" class="nav-btn secondary">Logout</button>
+    </nav>
+    </header>
+
+    <main class="content-container">
+        <h2>Our Exquisite Menu</h2>
+        <div id="product-list" class="product-grid">
+            </div>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
