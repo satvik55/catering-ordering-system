@@ -1,24 +1,54 @@
-# Catering Reservation and Ordering System
+# Student-Teacher Booking Appointment System
 
-This is a web application that allows caterers to promote and sell their products. It provides a platform for users to browse and purchase catering services.
+A web application designed to streamline the process of scheduling appointments between students and teachers. Students can search for teachers, view their availability, and book slots. Teachers can manage their schedules and approve appointments. The project is built with modern HTML, CSS, and JavaScript, and it leverages Firebase for all backend services.
 
-## Technologies Used
+---
 
--   [cite_start]**Frontend:** HTML, CSS, JavaScript 
--   [cite_start]**Backend & Database:** Firebase (Firestore, Authentication) [cite: 3, 35]
+## ✨ Key Features
 
-## Problem Statement
+* **Role-Based Authentication:** Secure login and registration for three distinct roles: Student, Teacher, and Admin.
+* **Admin Dashboard:** Admins can add new teachers to the system and approve pending student registrations.
+* **Teacher Dashboard:** Teachers can set their available time slots and view/approve/reject appointment requests from students.
+* **Student Dashboard:** Students can search for teachers by name or subject, view their availability, and book an appointment.
 
-[cite_start]The goal of this project is to create a portal where users can buy catering and admins can manage product information securely[cite: 7]. [cite_start]This system aims to help rural caterers sell their commodities globally [cite: 6] [cite_start]and promote traditional Indian culture[cite: 8].
+---
 
-## [cite_start]Project Execution Workflow [cite: 32]
+## 🛠️ Technologies Used
 
-1.  [cite_start]**Authentication**: Users and Admins can register and log in.
-2.  [cite_start]**Admin Panel**: After logging in, an admin can access a dashboard to upload new product details.
-3.  [cite_start]**User View**: Users can view products [cite: 13][cite_start], add them to the cart [cite: 14][cite_start], and place an order.
+* **Frontend:** HTML5, CSS3, JavaScript (ES6 Modules)
+* **Backend-as-a-Service:** Firebase (Authentication for user management, Firestore for data storage)
+* **Local Development:** Firebase CLI, VS Code Live Server
 
-## How to Run
+---
 
-1.  Clone the repository.
-2.  Open the `auth/login.html` file in your browser to begin.
-3.  You will need your own Firebase project configuration in `js/firebase-config.js`.
+## 📖 Getting Started: How to Run the Project Locally
+
+**Important:** You cannot run this project by opening the `index.html` file directly in your browser. It must be served by a local web server to allow communication with the Firebase backend.
+
+### Method 1: The Easy Way (Using VS Code + Live Server)
+
+This is the simplest method if you use Visual Studio Code.
+
+1.  **Prerequisites:**
+    * [Visual Studio Code](https://code.visualstudio.com/) installed.
+    * The [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension installed from the VS Code marketplace.
+2.  **Clone the Repository** and open the project folder in VS Code.
+3.  **Right-click** on the `index.html` file.
+4.  Select **"Open with Live Server"**. Your browser will open with the project running.
+
+### Method 2: The Standard Way (Using the Terminal)
+
+This method works for any code editor.
+
+1.  **Prerequisites:**
+    * You must have the [Firebase CLI](https://firebase.google.com/docs/cli) installed.
+2.  **Clone the Repository** and navigate into the project folder in your terminal.
+    ```sh
+    git clone [https://github.com/satvik55/student-teacher-booking-app.git](https://github.com/satvik55/student-teacher-booking-app.git)
+    cd student-teacher-booking-app
+    ```
+3.  **Start the Local Server** using the Firebase CLI.
+    ```sh
+    firebase serve
+    ```
+4.  **View the Project** by opening your browser to **`http://localhost:5000`**.
